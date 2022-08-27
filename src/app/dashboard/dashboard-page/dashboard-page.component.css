@@ -1,0 +1,84 @@
+.button_group,
+.button_group_fotter {
+    text-align: right;
+    padding: 3px 0;
+}
+.button_group_fotter{
+    padding: 2rem 0 15px 0 ;
+}
+
+.button_group a {
+    padding: 5px 7px;
+    border-radius: 11px;
+    border: 1px solid;
+    color: #ffffff;
+    margin: 0px 0px 0px 10px;
+}
+
+.button_group_fotter a {
+    padding: 10px 17px;
+    border-radius: 11px;
+    border: 1px solid;
+    color: #000000;
+    margin: 0px 0px 0px 10px;
+}
+
+.bb {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* .d-flex{
+    display: flex;
+    align-items: center;
+}
+.d-flex img{
+    margin-left: 9px;
+    cursor: pointer;
+} */
+/* .input_grp{
+    display: flex;
+    align-items: center;
+} */
+/* .input_grp label{
+    margin-right: 2rem;
+    width: 19%;
+} */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #ffd8c6;
+}
+
+th {
+    background-color: #f06321;
+    color: #ffffff;
+}
+
+
+/* ..........model...................... */
+
+.modal-header{
+background-color: #f06321;
+color: #ffffff;
+}
+.modal .modal-dialog .modal-content .modal-header .modal-title:after{
+    display: none;
+}
+.modal-footer{
+    border: none;
+}
+
