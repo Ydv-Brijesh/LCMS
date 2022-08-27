@@ -133,7 +133,7 @@ tr:nth-child(even) {
 
 .nav-tabs {
     border-bottom: 0px solid #DDD;
-        padding: 0px 0 0px 20px;
+    padding: 0px 0 0px 20px;
 }
 
 .nav-tabs li a {
@@ -143,4 +143,35 @@ tr:nth-child(even) {
 
 .sn_sn {
     text-align: center;
+}
+
+
+
+
+
+
+
+
+.advance-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dd {
+    border-bottom: 1px solid #ddd;
+    margin: 15px 0 30px 0;
+}
+
+.button-list {
+    text-align: end;
+    padding: 12px 0 0 0;
+}
+
+.button-list a {
+    margin: 0 0 0 12px;
+}
+
+.btn-oreng {
+    background-color: #f06321;
+    color: #ffffff;
 }

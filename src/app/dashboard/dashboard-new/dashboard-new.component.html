@@ -11,7 +11,7 @@
         </div>
         <div class="wrapper-md">
             <div class="panel b-a">
-                <div class="panel-body">
+                <div class="">
                     <div class="b-a">
                         <div class="panel-body bg-antiquewhite">
                             <div class="row">
@@ -30,9 +30,8 @@
                                         </div>
                                         <div class="input-group">
                                             <span class="input-group-btn adv-btn">
-                                                <button data-toggle="modal" data-target="#basicModal"
-                                                    class="btn btn-red" type="button"><i class="fa fa-cog"
-                                                        aria-hidden="true"></i> ADVANCE SEARCH <i
+                                                <button (click)=toggleDisplay() class="btn btn-red" type="button"><i
+                                                        class="fa fa-cog" aria-hidden="true"></i> ADVANCE SEARCH <i
                                                         class="fa fa-1x fa-angle-right"></i>
                                                 </button>
                                             </span>
@@ -43,6 +42,169 @@
                         </div>
                     </div>
                 </div>
+                <form >
+                <div [hidden]="isShow">
+                    <div class="b-a">
+                        <div class="panel-body bg-antiquewhite">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="advance-search">
+                                        <div class="advance-search-box">
+                                            <label for="">Case/Writ Number</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Court</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Case Type</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Case Subject</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Case Year</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="advance-search">
+                                        <div class="advance-search-box">
+                                            <label for="">Case Status</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Contempt</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Notice No</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">District</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">SLP</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="dd"></div>
+                                    <div class="advance-search">
+                                        <div class="advance-search-box">
+                                            <label for="">Petitioner</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Respondent</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Petitioner Counsel</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Respondent Counsel</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Representing Officer</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="dd"></div>
+                                    <div class="advance-search">
+                                        <div class="advance-search-box">
+                                            <label for="">Hearing Date</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Court Order Date</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Judgement Date</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Compliance Start Date</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                        <div class="advance-search-box">
+                                            <label for="">Compliance End Date</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" formControlName>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="button-list">
+                                        <a  class="btn btn-default" role="button">RESET</a>
+                                        <a  class="btn btn-oreng" role="button"><i
+                                                class="fa fa-search" aria-hidden="true"></i> SEARCH</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </form>
                 <div class="inner-panel-body">
                     <div class="panel-body">
                         <div class="b-a over_shadow">

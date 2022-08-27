@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardNewComponent } from './dashboard-new/dashboard-new.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
+import {AdvanceSearchListComponent} from './advance-search-list/advance-search-list.component';
 import { AgencyComponentComponent } from './system-configuration/agency-component/agency-component.component';
 import { BanksComponent } from './system-configuration/banks/banks.component';
 import { DesignationComponent } from './system-configuration/designation/designation.component';
@@ -16,6 +17,7 @@ import { VendorTypeComponent } from './system-configuration/vendor-type/vendor-t
 const routes: Routes = [
   { path: '', component: DashboardPageComponent },
   { path: 'dashNew', component: DashboardNewComponent },
+  { path: 'advlist', component: AdvanceSearchListComponent },
   { path: 'beneficiary', 
   loadChildren: () => import('./beneficiary/beneficiary.module').then(m => m.BeneficiaryModule) 
 },

@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardNewComponent implements OnInit {
 
+  isShow = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleDisplay() {
+    this.isShow = !this.isShow;
   }
 
 }
